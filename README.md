@@ -1,6 +1,5 @@
 # Sample onepage site with animations
-https://github.com/codegingerine/charity
-<br>
+https://codegingerine.github.io/charity/
 Site deployed as part of recuitment process
 <br>
 HTML5, CSS3/SASS, RWD,  jQuery, Bootstrap, Photoshop
