@@ -1,5 +1,5 @@
 # Sample onepage site with animations
-codegingerine.github.io/charity/
+https://github.com/codegingerine/charity
 <br>
 Site deployed as part of recuitment process
 <br>
