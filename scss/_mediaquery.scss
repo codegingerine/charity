@@ -1,0 +1,148 @@
+@include media-breakpoint-to-1024 {
+	.case8.subpage {
+		// Campaign mechanism section
+		.mechanism {
+			.screen {
+				display: none;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-to-1280 {
+	.case8.subpage {
+	  	.wrap {
+		  padding: 50px 30px 30px 30px;
+	  	}
+	  	.intro-img {
+	  		max-height: 50%;
+	  	}
+		// Campaign mechanism section
+		.mechanism {
+			.screen {
+				right: -100px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-to-768 {
+	.fp-section,
+	.fp-slide,
+	.fp-tableCell{
+	    height: auto !important;
+	}
+	.case8.subpage {
+		.heading {
+			font-size: 24px;
+		}
+		.title {
+			font-size: 36px;
+		}
+		// Brief section
+		// padding on small screens
+		.brief {
+			.wrap {
+				padding-bottom: 60px;
+			}
+			.claim-wrap {
+				padding: 30px 0 10px;
+			}
+			.claim-wrap::after {
+				bottom: 0;
+				width: 100%;
+			}
+			.claim {
+				width: auto;
+				font-size: 30px;
+				top: 10px;
+			}
+			.claim-small {
+				margin-top: 20px;
+			}
+			.zoom {
+				width: 35px;
+			}
+		}
+		// Audience section
+		.users {
+			.logo {
+				margin: 0 auto;
+				display: inline-block !important;
+			}
+			.default-text {
+				margin: 0;
+			}
+			.icons-block,
+    		.icons-block-2 {
+				width: 16%;
+				margin: 10px 2%;
+			}
+			.users-total {
+				position: relative;
+				margin-top: 30px;
+				img {
+					display: inline-block !important;
+				}
+			}
+		}
+		// Campaign mechanism section
+		.mechanism {
+			.step-wrap {
+			    width: 100%;
+      			float: none;
+      			height: 120px;
+			}
+			.step {
+				width: 31%;
+				float: left;
+			}
+			.step-wrap:first-of-type,
+			.step-wrap:nth-of-type(2) {
+				img.shape {
+					display: none !important;
+				}
+			}
+			.step-wrap:nth-of-type(2),
+			.step-wrap:last-of-type {
+				img.numb,
+				img.base {
+					left: 0;
+					right: 0;
+					float: none;
+				}
+			}
+			.step-wrap:nth-of-type(2) {
+				margin: 0;
+			}
+			.action {
+				width: 63%;
+				float: left;
+				margin: 0;
+				margin-left: 5%;
+				margin-top: 10px;
+			}
+			.name {
+				height: auto;
+			}
+			.divclear {
+				display: none;
+			}
+		}
+		// Help section
+		.help {
+			height: 100vh !important;
+			.wrap {
+				padding-bottom: 75px;
+			}
+			.title {
+				font-size: 30px;
+				padding-bottom: 0;
+			}
+			.default-text {
+				font-size: 26px;
+			}
+		}
+	}
+}
+

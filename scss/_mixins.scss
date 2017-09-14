@@ -1,0 +1,163 @@
+// ----- Breakpoints -----
+
+
+/* max-width: 1600px
+   ----------------------------- */
+@mixin media-breakpoint-to-1600 {
+	@media screen and (max-width: 1600px) {
+	 @content;
+	}
+}
+
+/* max-width: 1440px
+   ----------------------------- */
+@mixin media-breakpoint-to-1440 {
+	@media screen and (max-width: 1440px) {
+	 @content;
+	}
+}
+
+/* max-width: 1366px
+   ----------------------------- */
+@mixin media-breakpoint-to-1366 {
+	@media screen and (max-width: 1366px) {
+	 @content;
+	}
+}
+
+/* max-width: 1280px
+   ----------------------------- */
+@mixin media-breakpoint-to-1280 {
+	@media screen and (max-width: 1280px) {
+	 @content;
+	}
+}
+
+/* max-width: 1024px
+   ----------------------------- */
+@mixin media-breakpoint-to-1024 {
+	@media screen and (max-width: 1024px) {
+	 @content;
+	}
+}
+
+/* max-width: 768px
+   ----------------------------- */
+@mixin media-breakpoint-to-768 {
+	@media screen and (max-width: 768px) {
+	 @content;
+	}
+}
+
+
+
+// mixins for browser prefixes
+
+@mixin transition($properties) {
+	-webkit-transition: $properties;
+	-moz-transition: $properties;
+	-o-transition: $properties;
+	-ms-transition: $properties;
+	transition: $properties;
+}
+
+@mixin transform($properties) {
+	-webkit-transform: $properties;
+	-moz-transform: $properties;
+	-ms-transform: $properties;
+	-o-transform: $properties;
+	transform: $properties;
+}
+
+@mixin animation($properties) {
+    -moz-animation: $properties;
+    -o-animation: spin-horizontal $properties;
+    -webkit-animation: spin-horizontal $properties;
+    -ms-animation: $properties;
+    animation: $properties;
+}
+
+@mixin border-radius($properties) {
+	border-radius: $properties;
+  -moz-border-radius: $properties;
+  -webkit-border-radius: $properties;
+}
+
+@mixin background-size($properties) {
+	-webkit-background-size: $properties;
+    -moz-background-size:  $properties;
+    -o-background-size:  $properties;
+    background-size:  $properties;
+}
+
+@mixin box-shadow($properties) {
+	-webkit-box-shadow: $properties;
+	-moz-box-shadow: $properties;
+	box-shadow: $properties;
+}
+
+@mixin box-shadow($properties) {
+	-webkit-box-shadow: $properties;
+	-moz-box-shadow: $properties;
+	box-shadow: $properties;
+}
+
+@mixin display-flex() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+@mixin display-flex-important() {
+	display: -webkit-box !important;
+	display: -moz-box !important;
+	display: -ms-flexbox !important;
+	display: -webkit-flex !important;
+	display: flex !important;
+}
+
+@mixin display-inline-flex() {
+	display: -ms-inline-flexbox;
+    display: -webkit-flex;
+    display: inline-flex;
+}
+
+@mixin flex($properties) {
+	// -webkit-box-flex: $properties;
+  // -moz-box-flex: $properties;
+  -webkit-flex: $properties;
+  -ms-flex: $properties;
+  flex: $properties;
+}
+
+@mixin flex-wrap($properties) {
+	-webkit-flex-wrap: $properties;
+	-ms-flex-wrap: $properties;
+	flex-wrap: $properties;
+}
+
+@mixin align-items($properties) {
+	-webkit-align-items: $properties;
+	align-items: $properties;
+}
+
+@mixin justify-content($properties) {
+	-webkit-box-pack:  $properties;
+	-webkit-justify-content: $properties;
+	-ms-flex-pack: $properties;
+	justify-content: $properties;
+}
+
+@mixin align-self($properties) {
+	-webkit-align-self: $properties;
+	-ms-flex-item-align: $properties;
+	align-self: $properties;
+}
+
+@mixin flex-direction($properties) {
+	-webkit-flex-direction: $properties;
+	-ms-flex-direction: $properties;
+	flex-direction: $properties;
+}

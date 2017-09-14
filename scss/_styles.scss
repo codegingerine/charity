@@ -1,0 +1,304 @@
+
+.case8.subpage {
+	// Intro
+	.intro-charity {
+		.wrap {
+			background: #000000;
+      height: 100vh;
+      position: relative;
+		}
+	}
+	.charity-logo {
+		display: block;
+		margin: 0 auto;
+	}
+	.case-title-subpage {
+		color: #cdd1e1;
+		letter-spacing: 0;
+	}
+	.intro-img {
+		position: absolute;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		bottom: 0px;
+	}
+	// Brief
+	.brief {
+    .wrap {
+      background: #ffffff;
+    }
+		.heading {
+			font-size: 30px;
+		}
+		.claim-wrap {
+			width: 100%;
+			height: auto;
+			overflow: hidden;
+			padding: 30px 50px;
+      position: relative;
+		}
+  	.claim-wrap::after {
+  	  content: "";
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+  	  width: 84%;
+  	  height: 1px;
+  	  background: #f3f3f3;
+  	}
+		.claim {
+  	  display: none;
+  	  width: 37%;
+  		float: left;
+  		font-family: Poppins, sans-serif;
+  		font-weight: 600;
+  		font-size: 40px;
+  		color: $color-blue;
+  	  line-height: 1.1;
+  		position: relative;
+      top: 28px;
+  	  // typing effect
+  	  overflow: hidden;
+  	  border-right: 3px solid #cbcbcb; /* typwriter cursor */
+  	  white-space: nowrap;
+  	  margin: 0 auto;
+  	  animation: 
+    		typing 3s steps(30, end),
+    		blink-caret .75s step-end infinite;
+		}
+  	// The typing effect
+  	@keyframes typing {
+  	  from { width: 0 }
+  	  to { width: 37% }
+  	}
+  	// The typewriter cursor effect
+  	@keyframes blink-caret {
+  	  from, to { border-color: transparent }
+  	  37% { border-color: #cbcbcb; }
+  	}
+		.zoom {
+      width: 9%;
+			float: right;
+		}
+		.claim-small {
+			font-size: 16px;
+			color: #878787;
+			text-align: center;
+		}
+	}
+  // Audience section
+  .users {
+    .wrap {
+      background: #000000;
+    }
+    .logos {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .logo {
+      margin-right: 15px;
+    }
+    .logo:first-of-type,
+    .logo:last-of-type {
+      height: 35px;
+    }
+    .default-text {
+      text-align: center;
+      color: $color-mid-grey1;
+      margin: 0 80px;
+      line-height: 26px;
+    }
+    .highlight {
+      font-weight: 600;
+      font-size: 40px;
+      color: #ffffff;
+      text-align: center;
+      margin: 40px 0;
+    }
+    .icons-block,
+    .icons-block-2 {
+      width: 9.1%;
+      float: left;
+      margin: 0 .47%;
+      img {
+      width: 16%;
+      float: left;
+      margin: 2px 1px;
+      display: none;
+      }
+    }
+    .icons-block:first-of-type {
+      margin-left: 0;
+    }
+    .icons-block-2 {
+      margin-right: 0;
+    }
+    .users-total {
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: 0 auto 45px 0;
+      right: 0;
+      img {
+      width: 12px;
+      }
+      img, p {
+      display: inline-block;
+      vertical-align: middle;
+      }
+      p {
+      width: auto;
+      color: $color-mid-grey1;
+      font-size: 16px;
+      }
+    }
+  }
+	// Celebrities support
+	.support {
+		.wrap {
+			padding-left: 350px;
+		}
+		.heading {
+			font-size: 55px;
+		}
+		.scene-wrap {
+			position: absolute;
+			width: 42%;
+			height: 100%;
+		}
+		.scene-support {
+			position: relative;
+			width: 150%;
+			height: 100%;
+			top: 20%;
+			li {
+				float: left;
+				width: 33.3333%;
+			}
+			li:nth-of-type(2) {
+				left: -18%;
+				position: relative;
+				top: -10px;
+			}
+			li:nth-of-type(3) {
+				left: -36%;
+				position: relative;
+				top: -20px;
+			}
+		}
+	}
+
+  // Campaign mechanism section
+  .mechanism {
+  	.screen {
+  	  position: absolute;
+  	  right: 0;
+  	  top: 50%;
+  	  @include transform(translateY(-50%));
+  	  height: 65%;
+  	}
+    .step-wrap {
+      margin: 40px 0;
+      position: relative;
+      width: 31%;
+      float: left;
+    }
+    .step {
+      position: relative;
+      width: 100%;
+      height: 120px;
+      img {
+      display: none;
+      }
+      img.numb {
+      position: relative;
+      vertical-align: top;
+      width: 26px;
+      top: -7px;
+      }
+      img.base {
+      max-height: 90px;
+      position: relative;
+      }
+      img.shape {
+      position: absolute;
+      }
+    }
+    .step-wrap:first-of-type {
+      img.shape {
+        top: 30%;
+        right: -25%;
+      }
+    }
+    .step-wrap:nth-of-type(2) {
+      margin-left: 3.5%;
+      margin-right: 3.5%;
+      img.base {
+        position: relative;
+        left: 15%;
+      }
+      img.numb {
+        right: -15%;
+      }
+      img.shape {
+        top: 45%;
+        right: -25%;
+      }
+    }
+    .step-wrap:last-of-type {
+      img.base {
+        float: right;
+      }
+      img.numb {
+        right: -15%;
+      }
+    }
+    .action {
+      margin-top: 25px;
+    }
+    .name {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+      height: 45px;
+    }
+    .cta,
+    .act {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 2;
+    }
+    .cta {
+      color: #878787;
+    }
+    .act {
+      color: #7ab62e;
+    }
+  }
+  // Help section
+  .help {
+    background-image: url('../img/children.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .title {
+      text-align: center;
+      color: #ffffff;
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
+      font-size: 73px;
+    }
+    .default-text {
+      color: #ffffff;
+      font-size: 45px;
+      text-align: center;
+    }
+    .text-block {
+      position: relative;
+      top: 50%;
+      @include transform(translateY(-50%));
+    }
+  }
+}
+
