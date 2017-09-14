@@ -3,7 +3,6 @@ $(document).ready(function(){
 	/* ===== FULLPAGE.JS PLUGIN ===== */
 
 	$('#fullpage').fullpage({
-		lockAnchors: true,
 		navigation: true,
 		navigationPosition: 'right',
 		navigationTooltips: ['#WeCanHelp', 'Brief', 'Helpers', 'Mechanism', 'HelpThem'],
