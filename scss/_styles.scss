@@ -99,6 +99,7 @@
     }
     .logo {
       margin-right: 15px;
+      display: inline-block !important;
     }
     .logo:first-of-type,
     .logo:last-of-type {
@@ -144,6 +145,7 @@
       right: 0;
       img {
       width: 12px;
+      display: inline-block !important;
       }
       img, p {
       display: inline-block;
@@ -212,6 +214,7 @@
       height: 120px;
       img {
       display: none;
+      max-width: 100%;
       }
       img.numb {
       position: relative;

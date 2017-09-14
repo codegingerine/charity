@@ -272,7 +272,8 @@ p {
   margin-bottom: 60px; }
 
 .case8.subpage .users .logo {
-  margin-right: 15px; }
+  margin-right: 15px;
+  display: inline-block !important; }
 
 .case8.subpage .users .logo:first-of-type,
 .case8.subpage .users .logo:last-of-type {
@@ -317,7 +318,8 @@ p {
   margin: 0 auto 45px 0;
   right: 0; }
   .case8.subpage .users .users-total img {
-    width: 12px; }
+    width: 12px;
+    display: inline-block !important; }
   .case8.subpage .users .users-total img, .case8.subpage .users .users-total p {
     display: inline-block;
     vertical-align: middle; }
@@ -376,7 +378,8 @@ p {
   width: 100%;
   height: 120px; }
   .case8.subpage .mechanism .step img {
-    display: none; }
+    display: none;
+    max-width: 100%; }
   .case8.subpage .mechanism .step img.numb {
     position: relative;
     vertical-align: top;
