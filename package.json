@@ -4,14 +4,17 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp-sass": "^2.3.2",
     "bower": "^1.7.9",
     "browser-sync": "^2.16.0",
     "gulp": "^3.9.1",
-    "sass": "^0.5.0",
-    "gulp-sourcemaps": "^1.6.0"
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-update": "0.0.2",
+    "node-sass": "^4.5.3",
+    "sass": "^0.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-sass": "^3.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

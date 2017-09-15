@@ -42,23 +42,29 @@
   	.claim-wrap::after {
   	  content: "";
       position: absolute;
-      bottom: 30px;
+      bottom: 15px;
       left: 0;
   	  width: 84%;
   	  height: 1px;
   	  background: #f3f3f3;
-  	}
+    }
+    .typing {
+      position: relative;
+      width: auto;
+      display: inline-block;
+      top: 28px;
+    }
 		.claim {
   	  display: none;
-  	  width: 37%;
+  	  width: 100%;
   		float: left;
   		font-family: Poppins, sans-serif;
   		font-weight: 600;
   		font-size: 40px;
   		color: $color-blue;
   	  line-height: 1.1;
-  		position: relative;
-      top: 28px;
+      position: relative;
+      padding-right: 5px;
   	  // typing effect
   	  overflow: hidden;
   	  border-right: 3px solid #cbcbcb; /* typwriter cursor */
@@ -71,16 +77,18 @@
   	// The typing effect
   	@keyframes typing {
   	  from { width: 0 }
-  	  to { width: 37% }
+  	  to { width: 100% }
   	}
   	// The typewriter cursor effect
   	@keyframes blink-caret {
   	  from, to { border-color: transparent }
-  	  37% { border-color: #cbcbcb; }
-  	}
+  	  50% { border-color: #cbcbcb; }
+    }
 		.zoom {
-      width: 9%;
-			float: right;
+      width: 55px;
+      float: right;
+      top: 12px;
+      position: relative;
 		}
 		.claim-small {
 			font-size: 16px;
@@ -122,7 +130,7 @@
     .icons-block-2 {
       width: 9.1%;
       float: left;
-      margin: 0 .47%;
+      margin: 0 .47% 70px 0;
       img {
       width: 16%;
       float: left;
@@ -195,6 +203,10 @@
 
   // Campaign mechanism section
   .mechanism {
+    .fp-tableCell {
+      overflow: hidden;
+      position: relative;
+    }
   	.screen {
   	  position: absolute;
   	  right: 0;

@@ -128,6 +128,9 @@ p {
 .fp-tableCell {
   vertical-align: top; }
 
+#fp-nav.right {
+  right: 5px; }
+
 #fp-nav ul,
 .fp-slidesNav ul {
   margin-right: 30px; }
@@ -219,15 +222,21 @@ p {
 .case8.subpage .brief .claim-wrap::after {
   content: "";
   position: absolute;
-  bottom: 30px;
+  bottom: 15px;
   left: 0;
   width: 84%;
   height: 1px;
   background: #f3f3f3; }
 
+.case8.subpage .brief .typing {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  top: 28px; }
+
 .case8.subpage .brief .claim {
   display: none;
-  width: 37%;
+  width: 100%;
   float: left;
   font-family: Poppins, sans-serif;
   font-weight: 600;
@@ -235,7 +244,7 @@ p {
   color: #5799fc;
   line-height: 1.1;
   position: relative;
-  top: 28px;
+  padding-right: 5px;
   overflow: hidden;
   border-right: 3px solid #cbcbcb;
   /* typwriter cursor */
@@ -247,17 +256,19 @@ p {
   from {
     width: 0; }
   to {
-    width: 37%; } }
+    width: 100%; } }
 
 @keyframes blink-caret {
   from, to {
     border-color: transparent; }
-  37% {
+  50% {
     border-color: #cbcbcb; } }
 
 .case8.subpage .brief .zoom {
-  width: 9%;
-  float: right; }
+  width: 55px;
+  float: right;
+  top: 12px;
+  position: relative; }
 
 .case8.subpage .brief .claim-small {
   font-size: 16px;
@@ -296,7 +307,7 @@ p {
 .case8.subpage .users .icons-block-2 {
   width: 9.1%;
   float: left;
-  margin: 0 .47%; }
+  margin: 0 .47% 70px 0; }
   .case8.subpage .users .icons-block img,
   .case8.subpage .users .icons-block-2 img {
     width: 16%;
@@ -355,6 +366,10 @@ p {
     left: -36%;
     position: relative;
     top: -20px; }
+
+.case8.subpage .mechanism .fp-tableCell {
+  overflow: hidden;
+  position: relative; }
 
 .case8.subpage .mechanism .screen {
   position: absolute;
@@ -485,6 +500,8 @@ p {
   .case8.subpage .brief .claim-wrap::after {
     bottom: 0;
     width: 100%; }
+  .case8.subpage .brief .typing {
+    top: 0; }
   .case8.subpage .brief .claim {
     width: auto;
     font-size: 30px;
@@ -492,7 +509,8 @@ p {
   .case8.subpage .brief .claim-small {
     margin-top: 20px; }
   .case8.subpage .brief .zoom {
-    width: 35px; }
+    width: 35px;
+    top: 0; }
   .case8.subpage .users .logo {
     margin: 0 auto;
     display: inline-block !important; }

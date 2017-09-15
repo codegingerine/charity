@@ -9,7 +9,7 @@ $(document).ready(function(){
 		showActiveTooltip:true,
 		autoScrolling: false,
 		sectionsColor: ['#000000', '#ffffff', '#000000', '#def3ff', '#f4f9fc'],
-		responsiveWidth: 768
+		responsiveWidth: 992
 	});
 
 
