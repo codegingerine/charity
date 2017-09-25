@@ -5,6 +5,7 @@ $(document).ready(function(){
 	$('#fullpage').fullpage({
 		navigation: true,
 		navigationPosition: 'right',
+		menu: "#menu",
 		navigationTooltips: ['#WeCanHelp', 'Brief', 'Helpers', 'Mechanism', 'HelpThem'],
 		showActiveTooltip:true,
 		autoScrolling: false,
